@@ -1,29 +1,10 @@
+from cs import Weappon, Terror, Counter
 
-class Player:
-    health = 100
-    money = 800
+w1 = Weappon("AK74", 25)
+w2 = Weappon("AKM", 30)
 
-    def __init__(self, name, team):
-        self.name = name
-        self.team = team
+p1 = Terror("mizro", "Counter-Terrorist", w1)
+p2 = Counter("kamoliddin", "Terrorist", w2)
 
-    def shoot(self, player):
-        if player.health <= 0:
-            return
-        player.health -= 15
-        if player.health <= 0:
-            print(f"{self.name} killed {player.name}")
-
-
-p1 = Player("mizro", "Counter-Terrorist")
-p2 = Player("kamoliddin", "Terrorist")
-
-p1.shoot(p2)
-p1.shoot(p2)
-p1.shoot(p2)
-p1.shoot(p2)
-p1.shoot(p2)
-p1.shoot(p2)
-p1.shoot(p2)
-
-
+p1.plant()
+p2.defuse()
