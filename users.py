@@ -13,3 +13,14 @@ users = [
     User("Bob", 2000),
     User("Felix", 2001),
 ]
+# lambda bilan ishlash yuli 
+
+# a = max(users, key=lambda user: user.age)
+
+# For if bilan ishlash yuli
+a = users[0]
+for user in users:
+    if a.age < user.age:
+        a = user
+
+print(a.name, a.age)
