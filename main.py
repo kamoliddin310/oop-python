@@ -15,8 +15,8 @@ class Player:
             print(f"{self.name} killed {player.name}")
 
 
-p1 = Player("mizro", "Counter-Terrorist")
-p2 = Player("kamoliddin", "Terrorist")
+p2 = Player("mizro", "Counter-Terrorist")
+p1 = Player("Devil", "Terrorist")
 
 p1.shoot(p2)
 p1.shoot(p2)
