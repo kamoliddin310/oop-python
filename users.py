@@ -13,3 +13,7 @@ users = [
     User("Bob", 2000),
     User("Felix", 2001),
 ]
+
+mx = max(users, key=lambda user: user.age)
+
+print(mx.name, mx.age)
