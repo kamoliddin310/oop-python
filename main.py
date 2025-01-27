@@ -52,7 +52,7 @@ types = [CardType("Humo"), CardType("Uzcard"), CardType("Visa")]
 
 account = Account("ali", "vali", "+998881234567")
 c1 = AloqaBankCard('olyik', 2345123451234123, 566, datetime(2029, 12, 12), 1200000, types[0])
-c2 = AloqaBankCard('bissness', 4132413241234, 435, datetime(2030, 12, 12), 235400000, types[2])
+c2 = SQBBankCard('bissness', 4132413241234, 435, datetime(2030, 12, 12), 235400000, types[2])
 
 account.add_card(c1)
 account.add_card(c2)
