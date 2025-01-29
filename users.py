@@ -17,10 +17,14 @@ users = [
 
 # a = max(users, key=lambda user: user.age)
 
-# For if bilan ishlash yuli
-a = users[0]
-for user in users:
-    if a.age < user.age:
-        a = user
+# for if bilan ishlash yuli
+# a = users[0]
+# for user in users:
+#     if a.age < user.age:
+#         a = user
 
-print(a.name, a.age)
+# print(a.name, a.age)
+
+# mx = max(users, key=lambda user: user.age)
+
+# print(mx.name, mx.age)
