@@ -46,15 +46,25 @@ class Account:
 
         return s
 
+    def get_card_info(self) -> format:
+        return f"'{self.last_name}' '{self.first_name}' balans -> {self.get_balans()}"
+
 
 types = [CardType("Humo"), CardType("Uzcard"), CardType("Visa")] 
 
 
-account = Account("ali", "vali", "+998881234567")
-c1 = AloqaBankCard('olyik', 2345123451234123, 566, datetime(2029, 12, 12), 1200000, types[0])
-c2 = SQBBankCard('bissness', 4132413241234, 435, datetime(2030, 12, 12), 235400000, types[2])
+account = Account("ali", "valiyev", "+998881234567")
+c1 = AloqaBankCard('olyik', 2345123451234123, 566, datetime(2029, 12, 12), 120000, types[0])
+c2 = SQBBankCard('bissness', 4132413241234, 435, datetime(2030, 12, 12), 100000, types[2])
+
+akc = Account("vali", "aliyev", "+998881234567")
+s1 = AloqaBankCard('olyik', 2345123451234123, 566, datetime(2029, 12, 12), 120000, types[1])
+s2 = SQBBankCard('bissness', 4132413241234, 435, datetime(2030, 12, 12), 100000, types[0])
 
 account.add_card(c1)
 account.add_card(c2)
+print(account.get_card_info())
 
-print(account.get_balans())
+akc.add_card(s1)
+akc.add_card(s2)
+print(akc.get_card_info())
